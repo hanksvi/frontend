@@ -7,10 +7,9 @@ frontend:
         - corepack prepare pnpm@latest --activate
         - pnpm install
     build:
-      commands:
-        - pnpm build
+      commands: []
   artifacts:
-    baseDirectory: dist
+    baseDirectory: .
     files:
       - '**/*'
   cache:
